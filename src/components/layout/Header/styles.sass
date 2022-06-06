@@ -1,0 +1,48 @@
+@use '../../../styles/util' as *
+
+header
+    background-color: var(--white)
+    position: relative
+    z-index: 200
+
+    > div 
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 70px
+
+    .nav-links
+        height: 100%
+        display: flex
+        align-items: center
+
+        a
+            display: flex
+            position: relative
+            align-items: center
+            margin: 0 1em
+            height: 100%
+
+            &:after 
+                content: ''
+                display: block
+                position: absolute
+                height: 5px
+                width: 100%
+                left: 0
+                bottom: 0
+                transition: inherit
+                
+            &:hover:after
+                background: var(--color-gradient)
+        
+    .menu-toggle
+        display: none
+
+    @include breakpoint-down(small)
+        .nav-links, button
+            display: none
+        
+        .menu-toggle
+            display: initial
+        
