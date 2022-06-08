@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Easybank landing page](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN)
-<!-- - Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- Live Site URL: [Easybank landing page](https://easybank-plum.vercel.app/)
 
 ## My process
 
