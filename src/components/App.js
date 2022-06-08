@@ -1,20 +1,31 @@
 import React, { Component, Fragment } from 'react'
 import { createRoot } from 'react-dom/client'
 
+import Main from './layout/Main'
 import Header from './layout/Header'
+import Footer from './layout/Footer'
+import SideDrawer from './UI/SideDrawer'
 
 import '../styles/styles.sass'
-import SideDrawer from './UI/SideDrawer'
-import Main from './layout/Main'
-import Footer from './layout/Footer'
 
 class App extends Component
 {
+  
+  state = {
+      sideDrawerIsOpen: false
+  }
+
+  toggleSideDrawer = () => {
+      this.setState(prevState => ({
+          sideDrawerIsOpen: !prevState.sideDrawerIsOpen
+      }))
+  }
+
   render() {
     return (
       <Fragment>
-        <Header />
-        <SideDrawer isOpen={false} />
+        <Header sideDrawerIsOpen={this.state.sideDrawerIsOpen} toggleHandler={this.toggleSideDrawer} />
+        <SideDrawer isOpen={this.state.sideDrawerIsOpen} toggleHandler={this.toggleSideDrawer} />
         <Main />
         <Footer />
       </Fragment>

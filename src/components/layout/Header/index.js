@@ -6,13 +6,13 @@ import NavLinks from '../../UI/NavLinks'
 
 import './styles.sass'
 
-export default () => (
+export default props => (
     <header>
         <div className="container">
             <Logo />
             <NavLinks />
             <CTAButton />
-            <MenuToggle />
+            <MenuToggle toggleHandler={props.toggleHandler} isOpen={props.sideDrawerIsOpen} />
         </div>
     </header>
 )
