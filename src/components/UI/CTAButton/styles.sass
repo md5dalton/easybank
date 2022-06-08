@@ -1,13 +1,27 @@
 @use '../../../styles/util' as *
 
 button
+  border: none
   appearance: none
-  border: navajowhite
-  background: var(--color-gradient)
-  color: var(--white)
+  overflow: hidden
+  position: relative
   font-weight: 700
   padding: 1em 2em
   border-radius: 2em
+  color: var(--white)
+  background-image: var(--color-gradient)
 
-  &:hover
-    background-color: var(--very-light-gray)
+  &:after
+    content: ""
+    display: block
+    position: absolute
+    height: 100%
+    width: 100%
+    top: 0
+    left: 0
+    background-color: hsla(0, 0%, 100%, 0)
+    transition: all .25s ease-in-out
+
+  &:hover:after
+    background-color: hsla(0, 0%, 100%, .2)
+    // background-color: var(--very-light-gray)
