@@ -1,5 +1,6 @@
 @use '../../../styles/util' as *
 @use '../../../styles/globals/layout.sass' as *
+@use '../../../styles/globals/typography.sass' as *
 
 h1, h2, h3
     font-weight: 300
@@ -24,33 +25,79 @@ h3
     h3
         font-size: 30px
 
-p
+p, .author
     color: var(--grayish-blue)
+
+p
     font-weight: 400
     line-height: 1.5
-    
-section
-    @extend .container
 
-    @include breakpoint-down("small")
+img.mockups
+    position: absolute
+
+    @include breakpoint-down(small)
+        width: 100%
+        top: -60px
+
+    @include breakpoint(large)
+        right: -130px
+        top: -70px
+
+section
+
+    @include breakpoint-down(small)
         text-align: center
 
+    &.hero, &.articles
+        @extend .container
+
     &.hero
-        margin-top: 20em
+        margin-top: 22em
 
     &.middle
         margin-top: 5em
-        padding-top: 5em
+        padding-top: 6em
         background-color: var(--light-grayish-blue)
 
+        .wrapper
+            @extend .container
+
         .list
-            padding-top: 4em
-            padding-bottom: 4em
+            padding-top: 5em
+            padding-bottom: 5em
 
             .item
                 h3
                     text-transform: capitalize
                     margin-top: 1em
+
+    &.articles
+        margin-top: 5em
+        margin-bottom: 15em
+
+        @include breakpoint-down(small)
+            text-align: initial
+            margin-bottom: 35em
+
+        h2
+            margin-bottom: 1em
+
+        .details
+            padding: 1em
+
+        .author
+            @extend .text-sm
+            padding: 1em 0
+
+        .title
+            font-size: 20px
+
+        img
+            height: 180px
+            border-radius: 5px 5px 0 0
+
+            @include breakpoint-down(small)
+                width: 100%
 
     button
         margin-top: 1em
@@ -65,10 +112,17 @@ section
         &.middle
             margin-top: 15em
 
-            > *
+            h2, p
                 max-width: 600px
 
+        &.articles
             .list
-                display: grid
-                grid-template-columns: repeat(4, 1fr)
-                gap: 47px
+                gap: 40px
+
+            img
+                width: 260px
+
+        .list
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            gap: 47px

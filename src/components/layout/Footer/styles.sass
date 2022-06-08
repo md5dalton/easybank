@@ -1,0 +1,61 @@
+@use '../../../styles/util' as *
+
+footer
+    background-color: var(--dark-blue)
+    color: var(--white)
+    position: absolute
+    bottom: 0
+    width: 100%
+    padding-top: 3em
+    padding-bottom: 3em
+
+    @include breakpoint-down(small)
+        text-align: center
+
+        .social-links
+            margin: 1.5em auto
+
+        .right-wrapper > *
+            margin-top: 2em
+
+        .site-map a
+            display: block
+            margin-top: 1em
+
+    .logo-and-icons
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+        img
+            margin-right: 1em
+
+    a, .copyright
+        color: var(--grayish-blue)
+
+    .site-map
+        text-transform: capitalize
+        font-weight: 400
+
+    @include breakpoint(large)
+        > *, .left-wrapper, .right-wrapper
+            display: flex
+
+        .left-wrapper
+            flex-grow: 1
+        
+        button
+            flex-grow: 0
+            width: fit-content
+
+        .right-wrapper
+            flex-flow: column
+            justify-content: space-between
+            align-items: flex-end
+        
+        .site-map
+            display: grid
+            gap: 1em
+            grid-template-columns: 200px repeat(1, 1fr)
+            margin-left: 10em
+        

@@ -9,16 +9,25 @@ html
     box-sizing: inherit
 
 body
+    position: relative
     margin: 0
     padding: 0
     padding-bottom: 5em
     color: var(--dark-blue)
     font-family: var(--font)
     background-repeat: no-repeat
-    background-position: right -130px top -70px, right -380px top -190px
-    background-image: url('./../../dist/images/image-mockups.png'), url('./../../dist/images/bg-intro-desktop.svg')
 
     @include breakpoint-down(small)
-        background-position: center top -40px, center top
-        background-size: 90%, auto
-        background-image: url('./../../dist/images/image-mockups.png'), url('./../../dist/images/bg-intro-mobile.svg')
+        // background-position: center top -40px, center top
+        // background-size: 90%, auto
+        // background-image: url('./../../dist/images/image-mockups.png'), url('./../../dist/images/bg-intro-mobile.svg')
+        
+        background-position: center top
+        background-image: url('./../../dist/images/bg-intro-mobile.svg')
+
+    @include breakpoint(large)
+        // background-position: right -130px top -70px, right -380px top -190px
+        // background-image: url('./../../dist/images/image-mockups.png'), url('./../../dist/images/bg-intro-desktop.svg')
+        
+        background-position: right -380px top -190px
+        background-image: url('./../../dist/images/bg-intro-desktop.svg')

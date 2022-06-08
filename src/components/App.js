@@ -2,11 +2,11 @@ import React, { Component, Fragment } from 'react'
 import { createRoot } from 'react-dom/client'
 
 import Header from './layout/Header'
-// import Main from './layout/Main'
 
 import '../styles/styles.sass'
 import SideDrawer from './UI/SideDrawer'
 import Main from './layout/Main'
+import Footer from './layout/Footer'
 
 class App extends Component
 {
@@ -16,6 +16,7 @@ class App extends Component
         <Header />
         <SideDrawer isOpen={false} />
         <Main />
+        <Footer />
       </Fragment>
     )
   }
