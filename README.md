@@ -25,8 +25,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Easybank landing page](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN)
-- Live Site URL: [Easybank landing page](https://easybank-plum.vercel.app/)
+- Repository URL: [Github](https://github.com/md5dalton/easybank.git)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN)
+- Live Site URL: [Vercel](https://easybank-plum.vercel.app/)
 
 ## My process
 
