@@ -54,7 +54,7 @@ I've never used multiple image backgrounds before. I took a dive into it...
 ```
 ### Continued development
 
-- [Sass](https://sass-lang.com/) - I was confortable with [Less](https://lesscss.org/) but I've fallen in love with Sass and it has only been a few days since I started with it
+- [Sass](https://sass-lang.com/) - I was comfortable with [Less](https://lesscss.org/) but I've fallen in love with Sass and it has only been a few days since I started.
 
 ## Author
 
@@ -63,4 +63,4 @@ I've never used multiple image backgrounds before. I took a dive into it...
 
 ## Acknowledgments
 
-- [Coder Coder](https://www.youtube.com/c/TheCoderCoder) Has a very helpful [practical tutorial](https://www.youtube.com/c/TheCoderCoder) for beginners in HTML, CSS, JS. I followed along on another project and decided to implement this one the way I was confortable with.
+- [Coder Coder](https://www.youtube.com/c/TheCoderCoder) Has a very helpful [practical tutorial](https://www.youtube.com/c/TheCoderCoder) for beginners in HTML, CSS, JS. I decided to follow similar webflow on this project but with a few adjustments to my liking.
